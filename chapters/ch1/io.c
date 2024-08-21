@@ -4,10 +4,9 @@
 int main() {
 	int c;
 
-	c = getchar();
-	while (c != EOF) {
+	printf("The numeric value of EOF is: %d\n", EOF);
+	while ((c = getchar()) != EOF) { /* EOF = -1 */
 		putchar(c);
-		c = getchar();
 	}
 	
 	return 0;
